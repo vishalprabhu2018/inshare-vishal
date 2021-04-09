@@ -58,7 +58,7 @@ try {
               emailFrom, 
               downloadLink: `${process.env.APP_BASE_URL}/files/${file.uuid}?source=email` ,
               size: parseInt(file.size/1000) + ' KB',
-              expires: '24 hours'
+              expires: '72 hours'
           })
   
   }).then(() => {
